@@ -43,5 +43,9 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+.env
 
 __screenshots__/
+
+# Custom
+.agent/*

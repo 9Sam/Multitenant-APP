@@ -57,7 +57,11 @@
           "buildTarget": "multiten:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "dependsOn": ["api-gateway:serve"],
+      "options": {
+        "proxyConfig": "apps/multiten/proxy.conf.json"
+      }
     },
     "lint": {
       "executor": "@nx/eslint:lint"
